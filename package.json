@@ -1,21 +1,18 @@
 {
-  "author": "Yamagishi Kazutoshi",
-  "name": "w3c-xmlhttprequest",
+  "author": "Avaer Kazmer",
+  "name": "window-xhr",
   "description": "Server-side XMLHttpRequest.",
-  "version": "2.1.2",
+  "version": "0.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/ykzts/node-xmlhttprequest",
+  "homepage": "https://github.com/modulesio/window-xhr",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ykzts/node-xmlhttprequest.git"
+    "url": "git://github.com/modulesio/window-xhr.git"
   },
   "main": "./lib/index.js",
   "scripts": {
     "lint": "npm install && eslint lib/**/*.js test/**/*.js",
     "test": "npm install && mocha test/**/*.js"
-  },
-  "browser": {
-    "./lib/index.js": "./lib/browser.js"
   },
   "dependencies": {},
   "devDependencies": {
