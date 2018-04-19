@@ -2,7 +2,7 @@
   "author": "Avaer Kazmer",
   "name": "window-xhr",
   "description": "Server-side XMLHttpRequest.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "homepage": "https://github.com/modulesio/window-xhr",
   "repository": {
