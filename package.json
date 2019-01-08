@@ -15,7 +15,7 @@
     "test": "npm install && mocha test/**/*.js"
   },
   "dependencies": {
-    "window-form-data": "0.0.1",
+    "window-form-data": "0.0.2",
     "window-follow-redirects": "0.0.1"
   },
   "devDependencies": {
