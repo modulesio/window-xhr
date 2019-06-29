@@ -15,7 +15,7 @@ $ npm install w3c-xmlhttprequest
 ### Simple GET request
 
 ```javascript
-var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
+var XMLHttpRequest = require('window-xhr').XMLHttpRequest;
 
 var client = new XMLHttpRequest();
 client.open('GET', 'http://example.com/');
@@ -28,7 +28,7 @@ client.send();
 ### Parse JSON response
 
 ```javascript
-var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
+var XMLHttpRequest = require('window-xhr').XMLHttpRequest;
 
 var client = new XMLHttpRequest();
 client.open('GET', 'http://exmaple.com/data.json');
@@ -41,6 +41,15 @@ client.addEventListener('load', function() {
   console.log(data.response.blog.title);
 }, false);
 client.send();
+```
+
+### Set custom `fetch` implementation
+
+```javascript
+var XMLHttpRequest = require('window-xhr').XMLHttpRequest;
+var fetch = require('window-fetch')
+
+XMLHttpRequest.setFetchImplementation(fetch)
 ```
 
 ## LICENSE
