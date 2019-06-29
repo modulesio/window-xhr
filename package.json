@@ -11,7 +11,7 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "lint": "eslint --fix lib/**/*.js test/**/*.js",
+    "lint": "eslint lib/**/*.js test/**/*.js",
     "test": "mocha test/**/*.js"
   },
   "dependencies": {
