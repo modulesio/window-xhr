@@ -16,6 +16,7 @@
       "before": false
     }],
     "comma-style": [2, "last"],
+    "comma-dangle": [2, "always-multiline"],
     "consistent-return": 2,
     "curly": 2,
     "default-case": 2,
@@ -83,7 +84,6 @@
     "no-trailing-spaces": 2,
     "no-undef": 2,
     "no-undef-init": 2,
-    "no-undefined": 2,
     "no-underscore-dangle": 0,
     "no-unused-expressions": 2,
     "no-unused-vars": 2,

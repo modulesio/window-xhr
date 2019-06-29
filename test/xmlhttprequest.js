@@ -38,7 +38,7 @@ function receiveRequest(req, res) {
   const query = parseQueryString(req.url);
   const body = query.body || '';
   res.writeHead(+(query.status || 200), {
-    'Content-Type': 'text/plain'
+    'Content-Type': 'text/plain',
   });
   res.write(body);
   res.end();
@@ -91,7 +91,7 @@ describe('XMLHttpRequest', function() {
       XMLHttpRequest.OPENED,
       XMLHttpRequest.HEADERS_RECEIVED,
       XMLHttpRequest.LOADING,
-      XMLHttpRequest.DONE
+      XMLHttpRequest.DONE,
     ];
     const client = new XMLHttpRequest();
     client.addEventListener('readystatechange', function() {
